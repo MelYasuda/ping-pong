@@ -33,6 +33,10 @@ namespace Pingpong
             {
               list.Add(-1);
             }
+            else if (i % 5 == 0)
+            {
+              list.Add(-2);
+            }
             else
             {
               list.Add(i);

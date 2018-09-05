@@ -32,7 +32,13 @@ namespace Pingpong.Tests
     public void ShowOutput_ReplaceMultiplesOf3WithPing()
     {
       PingpongGenerator generator = new PingpongGenerator();
-      CollectionAssert.AreEqual(new List<int>{1,2,-1,4,5,-1}, generator.ShowOutput("6"));
+      CollectionAssert.AreEqual(new List<int>{1,2,-1,4}, generator.ShowOutput("4"));
+    }
+    [TestMethod]
+    public void ShowOutput_ReplaceMultiplesOf5WithPong()
+    {
+      PingpongGenerator generator = new PingpongGenerator();
+      CollectionAssert.AreEqual(new List<int>{1,2,-1,4,-2,-1}, generator.ShowOutput("6"));
     }
   }
 }
